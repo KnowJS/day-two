@@ -17,8 +17,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ grunt
 - _npm home_ gulp
 - ... Node.js scripts!
-- Problem: Add a Makefile or npm [script] to your app that starts it and runs tests using mocha
-  - bonus: Create a simple gulp file that starts your server with live-reload
+- Problem: Add a Makefile or npm [script] to your app that starts it 
 
 ###10 min break
 
