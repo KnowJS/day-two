@@ -13,7 +13,6 @@ exports.resize = function (req, res, next) {
   // title field as `req.body.title`
   console.log('resizing %s', req.files.image.path);
 	kresize(req.files.image.path, 150, 150, function (err, stream) {
-		console.log(err);
 		if (err) next(err);
 		stream.pipe(res);
 	});
