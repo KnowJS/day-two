@@ -48,6 +48,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ node-inspector
 - on('unhandleException', ....
   - crash-first programming
+  - node --abort-on-uncaught-exception [script]
     - http://nodejs.org/api/domain.html#domain_warning_don_t_ignore_errors
 - cluster - http://nodejs.org/api/cluster.html
   - https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js
@@ -60,6 +61,10 @@ Node.js for Devs - Getting Dangerous Fast!
 - Pro Tip: _npm home_ bunyan
 - Problems: Instrument your module with debug
   - bonus: Wrap debug to create a logger for application level code allowing debug, info, warn, and error levels to be specified by environment variable
+- More Learning: 
+  - http://nodejs.org/api/process.html#process_process_abort
+  - DTrace
+  - http://www.joyent.com/blog/mdb-and-linux
 
 ###10 min break
 
