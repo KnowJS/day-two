@@ -12,10 +12,11 @@ Node.js for Devs - Getting Dangerous Fast!
 ###10 min break 
 
 ###11:00am - 11:30am : Running our Apps and Associated Tasks
-- npm [script]
-- make
+- npm [script] 
+- make (posix only)
 - _npm home_ grunt
 - _npm home_ gulp
+- ... Node.js scripts!
 - Problem: Add a Makefile or npm [script] to your app that starts it and runs tests using mocha
   - bonus: Create a simple gulp file that starts your server with live-reload
 
