@@ -30,7 +30,8 @@ Node.js for Devs - Getting Dangerous Fast!
   - process.env
 - command line parameters
   - _npm home_ minimist
-- Problem: Add a config.json file and configure your app to use it to control number of images to be scaled
+- Problem: Add a Makefile and move specification of your require GitHub application variables to be specified in it. 
+  - bonus: Add a config.json file and configure your app to use it to control number of images to be scaled
 - Pro Tip: Best solution cascades between env-dependent config files, to environment variables, overidable by command options.  
 - Pro Tip: Flexibility of Makefile(s)
   - allows multiple layers of compositing and overriding env vars
