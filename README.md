@@ -50,6 +50,9 @@ Node.js for Devs - Getting Dangerous Fast!
   - Crash-First Programming!
 - cluster - http://nodejs.org/api/cluster.html
   - https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js
+  - _npm home_ cluster-master
+  - _npm home_ cluster-master-ext
+  - 
 - domains - http://nodejs.org/api/domain.html
   - _npm home_ express-domain-middleware
 - process managers: forever, upstart+monit
