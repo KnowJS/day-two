@@ -48,7 +48,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ node-inspector
 - on('unhandleException', ....
   - Crash-First Programming!
-- cluster - http://nodejs.org/api/cluster.html
+  - cluster - http://nodejs.org/api/cluster.html
   - https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js
   - _npm home_ cluster-master
   - _npm home_ cluster-master-ext
