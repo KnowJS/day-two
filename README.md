@@ -17,7 +17,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ grunt
 - _npm home_ gulp
 - ... Node.js scripts!
-- Problem: Add a Makefile or npm [script] to your app that starts it 
+- Problem: Add a Makefile, create a 'start' target, and export environment variables needed to interact with github
   - bonus: Add a gulpfile.js and task to minify your css and output to a build folder
 
 ###10 min break
@@ -30,7 +30,7 @@ Node.js for Devs - Getting Dangerous Fast!
   - process.env
 - command line parameters
   - _npm home_ minimist
-- Problem: Add a Makefile and move specification of your require GitHub application variables to be specified in it. 
+
   - bonus: Add a config.json file and configure your app to use it to control number of images to be scaled
 - Pro Tip: Best solution cascades between env-dependent config files, to environment variables, overidable by command options.  
 - Pro Tip: Flexibility of Makefile(s)
