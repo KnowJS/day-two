@@ -18,6 +18,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ gulp
 - ... Node.js scripts!
 - Problem: Add a Makefile or npm [script] to your app that starts it 
+  - bonus: Add a gulpfile.js and task to minify your css and output to a build folder
 
 ###10 min break
 
