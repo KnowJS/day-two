@@ -55,6 +55,7 @@ Node.js for Devs - Getting Dangerous Fast!
   - _npm home_ cluster-master-ext
 - domains - http://nodejs.org/api/domain.html
   - _npm home_ express-domain-middleware
+  - _npm home_ node-okay
 - process managers: forever, upstart+monit
 - Pro Tip: _npm home_ bunyan
 - Problems: Instrument your module with debug
