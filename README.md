@@ -70,7 +70,8 @@ Node.js for Devs - Getting Dangerous Fast!
 ###2:10pm - 2:30pm: Code Analysis
 - _npm home_ jshint
 - _npm home_ jscs
-- Problem: Add a linting task to your Makefile or npm scripts section and fix the errors and warnings provided
+- Problem: Add a linting task to your Makefile or npm scripts section, calling jshint and jscs, and fix the errors and warnings provided
+  - bonus: add a jshint and jscs step to your gruntfile.js
 
 ###10 min break
 
