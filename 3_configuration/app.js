@@ -3,7 +3,6 @@
  * Module dependencies.
  */
 
-var auth = require('./lib/auth');
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -13,9 +12,10 @@ var path = require('path');
 var nconf = require('nconf');
 
 nconf
-	.argv()
 	.env()
-	.file({ file: path.join(__dirname, 'config.json') });
+	.file({ file: path.join(__dirname, 'config.json') })
+
+var auth = require('./lib/auth');
 
 var app = express();
 

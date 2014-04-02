@@ -1,3 +1,4 @@
+var nconf = require('nconf');
 var passport = require('passport');
 var GitHubStrategy = require('passport-github').Strategy;
 var util = require('util');
@@ -35,10 +36,11 @@ passport.deserializeUser(function deserializeUser (obj, done) {
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, an accessToken, refreshToken, and GitHub
 //   profile), and invoke a callback with a user object.
+console.log(nconf)
 passport.use(new GitHubStrategy({
-    clientID: process.env.GITHUB_CLIENT_ID,
-    clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: process.env.GITHUB_CLIENT_CALLBACKURL
+    clientID: nconf.get('GITHUB_CLIENT_ID'),
+    clientSecret: nconf.get('GITHUB_CLIENT_SECRET'),
+    callbackURL: nconf.get('GITHUB_CLIENT_CALLBACKURL')
   },
   function verify (accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
