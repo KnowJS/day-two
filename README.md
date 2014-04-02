@@ -42,7 +42,8 @@ Node.js for Devs - Getting Dangerous Fast!
   - process.env
 - command line parameters
   - _npm home_ minimist
-- Problem: Add a config.json file and configure your app to use it to control size of images to be scaled
+- Problem: Add a config.json file and configure your app to use it to pass in env vars required by passport-github 
+  - bonus: Add ability to override config via command line arguments and/or environment variables
 - Pro Tip: Best solution cascades between env-dependent config files, to environment variables, overidable by command options.  
 - Pro Tip: Flexibility of Makefile(s)
   - allows multiple layers of compositing and overriding env vars
