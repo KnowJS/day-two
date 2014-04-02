@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/reset.css" rel="stylesheet" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>    
+
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h1>Node.js for Devs - Getting Dangerous Fast!</h1>
+</div>
+      <div class='step' >
+    
+<h2>Day 2 - Building Up Strong</h2>
+</div>
+      <div class='step' >
+    
+<h3>10am - 10:50am : Recap from Day 1</h3>
+
+<ul>
+<li>Recap
+
+<ul>
+<li>JavaScript, node, npm, modules, </li>
+</ul></li>
+<li>Gel some ideas together, including how npm includes 3rd party modules</li>
+<li>Problem: Refactor code to resize images into separate module and separate repo in github. Update app to include it via package.json via tarball link</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>11:00am - 11:30am : Running our Apps and Associated Tasks</h3>
+
+<ul>
+<li>npm [script] </li>
+<li>make (posix only)</li>
+<li><em>npm home</em> grunt</li>
+<li><em>npm home</em> gulp</li>
+<li>... Node.js scripts!</li>
+<li>Problem: Add a Makefile, create a &#39;start&#39; target, and export environment variables needed to interact with github
+
+<ul>
+<li>bonus: Add a gulpfile.js and task to minify your css and output to a build folder</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>11:40pm - 12:15pm : Configuration</h3>
+
+<ul>
+<li>config files
+
+<ul>
+<li><em>npm home</em> nconf</li>
+<li><em>npm home</em> config-node</li>
+</ul></li>
+<li>environment variables
+
+<ul>
+<li>process.env</li>
+</ul></li>
+<li>command line parameters
+
+<ul>
+<li><em>npm home</em> minimist</li>
+</ul></li>
+<li>Problem: Add a config.json file and configure your app to use it to control size of images to be scaled</li>
+<li>Pro Tip: Best solution cascades between env-dependent config files, to environment variables, overidable by command options.<br></li>
+<li>Pro Tip: Flexibility of Makefile(s)
+
+<ul>
+<li>allows multiple layers of compositing and overriding env vars</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>12:15pm - 1:15pm : Lunch</h3>
+
+<ul>
+<li>lunchtime tip:
+
+<ul>
+<li>ES6 let operator and impact on variable scope</li>
+<li>ES6 generators and impact on async operations</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>1:15pm - 2:00pm : Logging &amp; Exception Handling</h3>
+
+<ul>
+<li><em>npm home</em> debug
+
+<ul>
+<li>module specific logger names for within reusable modules</li>
+<li>debug, info, warn, error levels for within applications</li>
+</ul></li>
+<li><em>npm home</em> node-inspector</li>
+<li>on(&#39;unhandleException&#39;, ....
+
+<ul>
+<li>crash-first programming</li>
+<li>node --abort-on-uncaught-exception [script]</li>
+<li><a href="http://nodejs.org/api/domain.html#domain_warning_don_t_ignore_errors">http://nodejs.org/api/domain.html#domain_warning_don_t_ignore_errors</a></li>
+</ul></li>
+<li>cluster - <a href="http://nodejs.org/api/cluster.html">http://nodejs.org/api/cluster.html</a>
+
+<ul>
+<li><a href="https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js">https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js</a></li>
+<li><em>npm home</em> cluster-master</li>
+<li><em>npm home</em> cluster-master-ext</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<ul>
+<li>domains - <a href="http://nodejs.org/api/domain.html">http://nodejs.org/api/domain.html</a>
+
+<ul>
+<li><em>npm home</em> express-domain-middleware</li>
+<li><em>npm home</em> node-okay</li>
+</ul></li>
+<li>process managers: forever, upstart+monit</li>
+<li>Pro Tip: <em>npm home</em> bunyan</li>
+<li>Problems: Instrument your module with debug
+
+<ul>
+<li>bonus: Wrap debug to create a logger for application level code allowing debug, info, warn, and error levels to be specified by environment variable</li>
+<li>bonus: Create a cluster.js and start your app with ncpus of workers.</li>
+</ul></li>
+<li>More Learning: 
+
+<ul>
+<li><a href="http://nodejs.org/api/process.html#process_process_abort">http://nodejs.org/api/process.html#process_process_abort</a></li>
+<li>DTrace</li>
+<li><a href="http://www.joyent.com/blog/mdb-and-linux">http://www.joyent.com/blog/mdb-and-linux</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>2:10pm - 2:30pm: Code Analysis</h3>
+
+<ul>
+<li><em>npm home</em> jshint</li>
+<li><em>npm home</em> jscs</li>
+<li>Problem: Add a linting task to your Makefile or npm scripts section, calling jshint and jscs, and fix the errors and warnings provided
+
+<ul>
+<li>bonus: add a jshint and jscs step to your gruntfile.js</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>2:40pm - 3:20pm: Testing</h3>
+
+<ul>
+<li><em>npm home</em> mocha (mention jasmine and others)</li>
+<li><em>npm home</em> should</li>
+<li><em>npm home</em> sinon</li>
+<li>Problem: Add a mocha test to your module that mocks out calls to &#39;gm&#39;, but ensures that the calls are made.</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>3:30pm - 4:10pm: Standing on Shoulders and Bootstrapping</h3>
+
+<ul>
+<li>hackathon-starter (<a href="https://github.com/sahat/hackathon-starter">https://github.com/sahat/hackathon-starter</a>)</li>
+<li><em>npm home</em> bower</li>
+<li><em>npm home</em> yeoman</li>
+<li>Problem: User bower to install bootstrap and update your app to use it</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>4:20 - 5:00pm: Node Style Modules on the Client and Code Reuse</h3>
+
+<ul>
+<li><em>npm home</em> browserify</li>
+<li>json rpc using: 
+
+<ul>
+<li><em>npm home</em> dnode</li>
+<li><em>npm home</em> shoe</li>
+</ul></li>
+<li>Problem: Add means of browserifying your client side code via bash in Makefile or npm scripts, or as a task in grunt or gulp. 
+
+<ul>
+<li>Bonus: Create a means of logging errors from the client to the server. </li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>10 min break</h3>
+</div>
+      <div class='step' >
+    
+<h3>(Stretch) 5:10 - 6:00pm: Functional Testing</h3>
+
+<ul>
+<li><em>npm home</em> selenium-webdriver</li>
+<li>Pro Tip: <a href="https://saucelabs.com/">https://saucelabs.com/</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h3>Day End Questions</h3>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    

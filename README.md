@@ -1,7 +1,11 @@
 Node.js for Devs - Getting Dangerous Fast!
 ==========================================
 
+---
+
 ##Day 2 - Building Up Strong
+
+---
 
 ###10am - 10:50am : Recap from Day 1
 - Recap
@@ -9,7 +13,11 @@ Node.js for Devs - Getting Dangerous Fast!
 - Gel some ideas together, including how npm includes 3rd party modules
 - Problem: Refactor code to resize images into separate module and separate repo in github. Update app to include it via package.json via tarball link
 
+---
+
 ###10 min break 
+
+---
 
 ###11:00am - 11:30am : Running our Apps and Associated Tasks
 - npm [script] 
@@ -20,7 +28,11 @@ Node.js for Devs - Getting Dangerous Fast!
 - Problem: Add a Makefile, create a 'start' target, and export environment variables needed to interact with github
   - bonus: Add a gulpfile.js and task to minify your css and output to a build folder
 
+---
+
 ###10 min break
+
+---
 
 ###11:40pm - 12:15pm : Configuration
 - config files
@@ -35,10 +47,14 @@ Node.js for Devs - Getting Dangerous Fast!
 - Pro Tip: Flexibility of Makefile(s)
   - allows multiple layers of compositing and overriding env vars
 
+---
+
 ###12:15pm - 1:15pm : Lunch 
 - lunchtime tip:
   - ES6 let operator and impact on variable scope
   - ES6 generators and impact on async operations
+
+---
 
 ###1:15pm - 2:00pm : Logging & Exception Handling
 - _npm home_ debug
@@ -53,6 +69,9 @@ Node.js for Devs - Getting Dangerous Fast!
   - https://github.com/sahat/hackathon-starter/blob/master/cluster_app.js
   - _npm home_ cluster-master
   - _npm home_ cluster-master-ext
+
+---
+
 - domains - http://nodejs.org/api/domain.html
   - _npm home_ express-domain-middleware
   - _npm home_ node-okay
@@ -60,12 +79,17 @@ Node.js for Devs - Getting Dangerous Fast!
 - Pro Tip: _npm home_ bunyan
 - Problems: Instrument your module with debug
   - bonus: Wrap debug to create a logger for application level code allowing debug, info, warn, and error levels to be specified by environment variable
+  - bonus: Create a cluster.js and start your app with ncpus of workers.
 - More Learning: 
   - http://nodejs.org/api/process.html#process_process_abort
   - DTrace
   - http://www.joyent.com/blog/mdb-and-linux
 
+---
+
 ###10 min break
+
+---
 
 ###2:10pm - 2:30pm: Code Analysis
 - _npm home_ jshint
@@ -73,7 +97,11 @@ Node.js for Devs - Getting Dangerous Fast!
 - Problem: Add a linting task to your Makefile or npm scripts section, calling jshint and jscs, and fix the errors and warnings provided
   - bonus: add a jshint and jscs step to your gruntfile.js
 
+---
+
 ###10 min break
+
+---
 
 ###2:40pm - 3:20pm: Testing
 - _npm home_ mocha (mention jasmine and others)
@@ -81,7 +109,11 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ sinon
 - Problem: Add a mocha test to your module that mocks out calls to 'gm', but ensures that the calls are made.
 
+---
+
 ###10 min break
+
+---
 
 ###3:30pm - 4:10pm: Standing on Shoulders and Bootstrapping
 - hackathon-starter (https://github.com/sahat/hackathon-starter)
@@ -89,7 +121,11 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ yeoman
 - Problem: User bower to install bootstrap and update your app to use it
 
+---
+
 ###10 min break
+
+---
 
 ###4:20 - 5:00pm: Node Style Modules on the Client and Code Reuse
 - _npm home_ browserify
@@ -97,12 +133,18 @@ Node.js for Devs - Getting Dangerous Fast!
   - _npm home_ dnode
   - _npm home_ shoe
 - Problem: Add means of browserifying your client side code via bash in Makefile or npm scripts, or as a task in grunt or gulp. 
+	- Bonus: Create a means of logging errors from the client to the server. 
+
+---
 
 ###10 min break
+
+---
 
 ###(Stretch) 5:10 - 6:00pm: Functional Testing
 - _npm home_ selenium-webdriver
 - Pro Tip: https://saucelabs.com/
 
+---
 
 ###Day End Questions
