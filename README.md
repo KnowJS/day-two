@@ -79,7 +79,7 @@ Node.js for Devs - Getting Dangerous Fast!
 - _npm home_ mocha (mention jasmine and others)
 - _npm home_ should
 - _npm home_ sinon
-- Problem: Add a mocha test to your module that mocks out 
+- Problem: Add a mocha test to your module that mocks out calls to 'gm', but ensures that the calls are made.
 
 ###10 min break
 
